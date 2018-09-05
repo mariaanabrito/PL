@@ -1,0 +1,47 @@
+i0: pushi 0
+i1: pushi 0
+i2: pushi 0
+i3: pushi 0
+i4: pushi 0
+i5: start
+i6: read
+i7: atoi
+i8: storeg 0
+i9: pushs "Os números ímpares são:\n"
+i10: writes
+i11: pushi 0
+i12: storeg 4
+i13: pushg 4
+i14: pushg 0
+i15: inf
+i16: jz i42
+i17: read
+i18: atoi
+i19: storeg 1
+i20: pushg 1
+i21: pushi 2
+i22: mod
+i23: pushi 0
+i24: sup
+i25: jz i35
+i26: pushg 1
+i27: writei
+i28: pushs "  \n"
+i29: writes
+i30: pushg 3
+i31: pushi 1
+i32: add
+i33: storeg 3
+i34: jump i37
+i35: pushi 0
+i36: storeg 1
+i37: pushg 4
+i38: pushi 1
+i39: add
+i40: storeg 4
+i41: jump i13
+i42: pushs "\nO total de números ímpares é: "
+i43: writes
+i44: pushg 3
+i45: writei
+i46: stop

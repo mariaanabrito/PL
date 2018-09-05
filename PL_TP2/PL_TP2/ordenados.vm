@@ -1,0 +1,125 @@
+i0: pushn 5
+i1: pushi 0
+i2: pushi 0
+i3: pushi 0
+i4: pushi 0
+i5: pushi 0
+i6: start
+i7: pushi 0
+i8: storeg 5
+i9: pushg 5
+i10: pushi 5
+i11: inf
+i12: jz i25
+i13: pushgp
+i14: pushi 0
+i15: padd
+i16: pushg 5
+i17: read
+i18: atoi
+i19: storen
+i20: pushg 5
+i21: pushi 1
+i22: add
+i23: storeg 5
+i24: jump i9
+i25: pushi 0
+i26: storeg 5
+i27: pushi 0
+i28: storeg 7
+i29: pushg 5
+i30: pushi 5
+i31: inf
+i32: jz i93
+i33: pushi 0
+i34: storeg 6
+i35: pushi 0
+i36: storeg 7
+i37: pushg 6
+i38: pushi 5
+i39: inf
+i40: jz i82
+i41: pushg 6
+i42: pushi 1
+i43: add
+i44: storeg 9
+i45: pushgp
+i46: pushi 0
+i47: padd
+i48: pushg 6
+i49: loadn
+i50: pushgp
+i51: pushi 0
+i52: padd
+i53: pushg 9
+i54: loadn
+i55: sup
+i56: jz i78
+i57: pushgp
+i58: pushi 0
+i59: padd
+i60: pushg 6
+i61: loadn
+i62: storeg 8
+i63: pushi 0
+i64: pushg 6
+i65: pushgp
+i66: pushi 0
+i67: padd
+i68: pushg 9
+i69: loadn
+i70: storen
+i71: pushi 0
+i72: pushg 9
+i73: pushg 8
+i74: storen
+i75: pushi 1
+i76: storeg 7
+i77: pushg 6
+i78: pushi 1
+i79: add
+i80: storeg 6
+i81: jump i37
+i82: pushg 7
+i83: pushi 0
+i84: equal
+i85: jz i89
+i86: pushi 6
+i87: storeg 5
+i88: pushg 5
+i89: pushi 1
+i90: add
+i91: storeg 5
+i92: jump i29
+i93: pushi 0
+i94: storeg 5
+i95: pushs "Os números ordenados decrescentemente são:\n"
+i96: writes
+i97: pushs "["
+i98: writes
+i99: pushg 5
+i100: pushi 4
+i101: inf
+i102: jz i116
+i103: pushgp
+i104: pushi 0
+i105: padd
+i106: pushg 5
+i107: loadn
+i108: writei
+i109: pushs ", "
+i110: writes
+i111: pushg 5
+i112: pushi 1
+i113: add
+i114: storeg 5
+i115: jump i99
+i116: pushgp
+i117: pushi 0
+i118: padd
+i119: pushi 4
+i120: loadn
+i121: writei
+i122: pushs "]"
+i123: writes
+i124: stop

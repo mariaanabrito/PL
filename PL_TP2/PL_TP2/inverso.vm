@@ -1,0 +1,61 @@
+i0: pushn 5
+i1: pushi 0
+i2: pushi 0
+i3: pushi 0
+i4: start
+i5: pushi 0
+i6: storeg 6
+i7: pushg 6
+i8: pushi 5
+i9: inf
+i10: jz i23
+i11: pushgp
+i12: pushi 0
+i13: padd
+i14: pushg 6
+i15: read
+i16: atoi
+i17: storen
+i18: pushg 6
+i19: pushi 1
+i20: add
+i21: storeg 6
+i22: jump i7
+i23: pushi 4
+i24: storeg 6
+i25: pushs "Os valores por ordem inversa são:\n"
+i26: writes
+i27: pushs "["
+i28: writes
+i29: pushg 6
+i30: pushi 0
+i31: sup
+i32: jz i50
+i33: pushgp
+i34: pushi 0
+i35: padd
+i36: pushg 6
+i37: loadn
+i38: writei
+i39: pushg 6
+i40: pushi 1
+i41: sup
+i42: jz i46
+i43: pushs ", "
+i44: writes
+i45: pushg 6
+i46: pushi 1
+i47: sub
+i48: storeg 6
+i49: jump i29
+i50: pushs ", "
+i51: writes
+i52: pushgp
+i53: pushi 0
+i54: padd
+i55: pushi 0
+i56: loadn
+i57: writei
+i58: pushs "]"
+i59: writes
+i60: stop

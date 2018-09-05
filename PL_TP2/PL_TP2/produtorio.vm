@@ -1,0 +1,32 @@
+i0: pushi 0
+i1: pushi 0
+i2: pushi 0
+i3: pushi 0
+i4: start
+i5: pushi 4
+i6: storeg 0
+i7: pushi 0
+i8: storeg 2
+i9: pushi 1
+i10: storeg 1
+i11: pushg 2
+i12: pushg 0
+i13: inf
+i14: jz i27
+i15: read
+i16: atoi
+i17: storeg 3
+i18: pushg 1
+i19: pushg 3
+i20: mul
+i21: storeg 1
+i22: pushg 2
+i23: pushi 1
+i24: add
+i25: storeg 2
+i26: jump i11
+i27: pushs "O produtório dos números lidos é "
+i28: writes
+i29: pushg 1
+i30: writei
+i31: stop

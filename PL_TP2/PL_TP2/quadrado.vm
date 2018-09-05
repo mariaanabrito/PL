@@ -1,0 +1,44 @@
+i0: pushi 0
+i1: pushi 0
+i2: pushi 0
+i3: pushi 0
+i4: pushi 0
+i5: start
+i6: read
+i7: atoi
+i8: storeg 0
+i9: read
+i10: atoi
+i11: storeg 1
+i12: read
+i13: atoi
+i14: storeg 2
+i15: read
+i16: atoi
+i17: storeg 3
+i18: pushi 0
+i19: storeg 4
+i20: pushg 0
+i21: pushg 1
+i22: equal
+i23: jz i35
+i24: pushg 0
+i25: pushg 2
+i26: equal
+i27: jz i35
+i28: pushg 0
+i29: pushg 3
+i30: equal
+i31: jz i35
+i32: pushi 1
+i33: storeg 4
+i34: pushg 4
+i35: pushi 0
+i36: equal
+i37: jz i41
+i38: pushs "Os números não representam os lados de um quadrado!"
+i39: writes
+i40: jump i43
+i41: pushs "Os números representam os lados de um quadrado!"
+i42: writes
+i43: stop
